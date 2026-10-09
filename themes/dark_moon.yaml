@@ -1,0 +1,98 @@
+Dark Moon:
+  # Minimal dark theme: graphite cards, cool silver accents.
+  # No size variables (fonts, icons, spacing): Home Assistant defaults are kept.
+
+  # ─── Graphite cards + silver hover (requires card-mod, optional) ───
+  card-mod-theme: Dark Moon
+  card-mod-card: |
+    ha-card {
+      /* opaque graphite gradient, top to bottom.
+         To use your own color on a card: --dark-moon-card-gradient: none
+         (then --ha-card-background shows), or set your own gradient */
+      background-image: var(--dark-moon-card-gradient,
+        linear-gradient(180deg, #1a1b1f 0%, #141518 100%));
+      background-origin: border-box;
+      background-repeat: no-repeat;
+      transition: border-color .3s ease, box-shadow .3s ease;
+    }
+    @media (hover: hover) {
+      ha-card:hover {
+        /* bring to front so neighbouring cards don't cover the glow */
+        position: relative;
+        z-index: 1;
+        border-color: rgba(226, 232, 240, 0.50);
+        box-shadow:
+          0 0 10px rgba(226, 232, 240, 0.24),
+          0 2px 3px rgba(0, 0, 0, 0.30),
+          0 10px 18px -10px rgba(0, 0, 0, 0.65);
+      }
+    }
+
+  modes:
+    dark:
+      # ─── Background ───
+      primary-background-color: "#0b0c0e"
+      secondary-background-color: "#111215"
+      lovelace-background: "#0b0c0e"
+
+      # ─── Accent: cool silver ───
+      primary-color: "#c9d1d9"
+      accent-color: "#c9d1d9"
+      dark-primary-color: "#9aa4ae"
+      light-primary-color: "#3a3f46"
+      text-primary-color: "#0b0c0e"
+      text-light-primary-color: "#f1f3f5"
+
+      # ─── Card ───
+      card-background-color: "#17181b"
+      ha-card-background: "#17181b"
+      ha-card-border-width: "1px"
+      ha-card-border-color: "rgba(255, 255, 255, 0.06)"
+      ha-card-border-radius: "16px"
+      ha-card-box-shadow: "0 2px 3px rgba(0, 0, 0, 0.30), 0 10px 18px -10px rgba(0, 0, 0, 0.65)"  # does not spill onto neighbouring cards
+
+      # ─── Text ───
+      primary-text-color: "#e6e8eb"
+      secondary-text-color: "#9aa0a7"
+      disabled-text-color: "#5c6168"
+      divider-color: "rgba(255, 255, 255, 0.08)"
+
+      # ─── Header and sidebar ───
+      app-header-background-color: "#0b0c0e"
+      app-header-text-color: "#e6e8eb"
+      app-header-border-bottom: "1px solid rgba(255, 255, 255, 0.05)"
+      sidebar-background-color: "#0e0f12"
+      sidebar-text-color: "#b4bac1"
+      sidebar-icon-color: "#8d939a"
+      sidebar-selected-background-color: "rgba(255, 255, 255, 0.08)"
+      sidebar-selected-text-color: "#ffffff"
+      sidebar-selected-icon-color: "#ffffff"
+
+      # ─── Mushroom (neutral shapes only) ───
+      mush-shape-color: "rgba(255, 255, 255, 0.05)"
+      mush-control-background-color: "rgba(255, 255, 255, 0.06)"
+
+      # ─── Dialogs and surfaces ───
+      mdc-theme-surface: "#1a1b1f"
+      ha-dialog-surface-background: "#1a1b1f"
+      ha-color-form-background: "#1f2125"
+
+      # ─── Text fields and dropdowns ───
+      input-fill-color: "#1f2125"
+      input-ink-color: "#e6e8eb"
+      input-label-ink-color: "#9aa0a7"
+      input-dropdown-icon-color: "#9aa0a7"
+      input-idle-line-color: "rgba(255, 255, 255, 0.18)"
+      input-hover-line-color: "rgba(255, 255, 255, 0.35)"
+      input-disabled-fill-color: "#18191c"
+      input-disabled-ink-color: "#5c6168"
+      code-editor-background-color: "#111215"
+
+      # ─── Controls ───
+      switch-checked-color: "#e6e8eb"
+      switch-checked-button-color: "#e6e8eb"
+      switch-checked-track-color: "#5a6068"
+      switch-unchecked-button-color: "#8d939a"
+      switch-unchecked-track-color: "#2a2d33"
+      slider-track-color: "#2a2d33"
+      scrollbar-thumb-color: "#2f3238"
