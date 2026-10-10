@@ -27,12 +27,12 @@ A minimal dark theme for Home Assistant: graphite cards, cool silver accents and
 
 1. Open HACS and search for **Dark Moon**, or add this repository as a custom repository (type: Theme).
 2. Download it.
-3. Run the `frontend.reload_themes` action (or restart Home Assistant).
+3. Use **Quick reload** (Settings → System → Restart Home Assistant) to load the theme.
 
 ### Manual
 
 1. Copy `themes/dark_moon.yaml` into your `config/themes/` folder.
-2. Run the `frontend.reload_themes` action.
+2. Use **Quick reload** (Settings → System → Restart Home Assistant) to load the theme.
 
 Either way, `configuration.yaml` must load themes:
 
