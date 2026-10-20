@@ -21,12 +21,20 @@ A minimal dark theme for Home Assistant: graphite cards, cool silver accents and
 
 ## Installation
 
+### HACS (custom repository)
+
+[![Open your Home Assistant instance and open a repository inside HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=RazerPC&repository=Dark-Moon&category=theme)
+
+1. Click the button above, or open HACS → ⋮ → **Custom repositories** and add `https://github.com/RazerPC/Dark-Moon` with type **Theme**.
+2. Download **Dark Moon**.
+3. Use **Quick reload** (Settings → System → Restart Home Assistant) to load the theme.
+
 ### Manual
 
 1. Copy `themes/dark_moon.yaml` into your `config/themes/` folder.
 2. Use **Quick reload** (Settings → System → Restart Home Assistant) to load the theme.
 
-Either way, `configuration.yaml` must load themes:
+In both cases, `configuration.yaml` must load themes:
 
 ```yaml
 frontend:
