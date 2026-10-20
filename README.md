@@ -21,14 +21,6 @@ A minimal dark theme for Home Assistant: graphite cards, cool silver accents and
 
 ## Installation
 
-### HACS
-
-[![Open your Home Assistant instance and open a repository inside HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=RazerPC&repository=Dark-Moon&category=theme)
-
-1. Open HACS and search for **Dark Moon**, or add this repository as a custom repository (type: Theme).
-2. Download it.
-3. Use **Quick reload** (Settings → System → Restart Home Assistant) to load the theme.
-
 ### Manual
 
 1. Copy `themes/dark_moon.yaml` into your `config/themes/` folder.
@@ -49,9 +41,11 @@ frontend:
 
 Dark Moon only has a dark variant. If the mode is set to Auto and your device is in light mode, Home Assistant mixes in its own light colors and some text becomes hard to read.
 
-## Per-card customization (card-mod)
+## Customization
 
-Use your own background color on a single card:
+Edit `themes/dark_moon.yaml` (colors, border radius, hover glow); every value is commented.
+
+To use your own color on a single card (requires card-mod):
 
 ```yaml
 card_mod:
@@ -61,28 +55,6 @@ card_mod:
       --ha-card-background: #2b1d0e;
     }
 ```
-
-Or replace the gradient with your own:
-
-```yaml
-card_mod:
-  style: |
-    ha-card {
-      --dark-moon-card-gradient: linear-gradient(180deg, #24324a 0%, #182235 100%);
-    }
-```
-
-## Theme customization
-
-| What | Where | Default |
-| --- | --- | --- |
-| Card gradient | `linear-gradient(...)` in `card-mod-card` | `#1a1b1f` → `#141518` |
-| Hover border | `border-color` in `card-mod-card` | `rgba(226, 232, 240, 0.50)` |
-| Hover glow | `0 0 10px rgba(226, 232, 240, 0.24)` | 10px, 24% |
-| Resting border | `ha-card-border-color` | `rgba(255, 255, 255, 0.06)` |
-| Card corner radius | `ha-card-border-radius` | `16px` |
-| Accent color | `primary-color`, `accent-color` | `#c9d1d9` |
-| Page background | `primary-background-color` | `#0b0c0e` |
 
 ## License
 
