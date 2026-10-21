@@ -1,6 +1,6 @@
 # Dark Moon Theme
 
-A minimal dark theme for Home Assistant: graphite cards, cool silver accents and a soft silver glow on hover.
+A minimal dark theme for Home Assistant with: graphite cards, cool silver accents and a soft silver glow on hover.
 
 ![Dark Moon](images/preview.png)
 
@@ -15,9 +15,11 @@ A minimal dark theme for Home Assistant: graphite cards, cool silver accents and
 
 ## Requirements
 
-- [card-mod](https://github.com/thomasloven/lovelace-card-mod) is **strongly recommended** for the full look.
-  - With card-mod: graphite gradient on cards and silver hover effect.
-  - Without card-mod: the theme still works (dark colors, borders, shadows, readable inputs), but cards are a flat `#17181b` and there is no gradient or hover effect.
+> [!WARNING]
+> [card-mod](https://github.com/thomasloven/lovelace-card-mod) is **strongly recommended** for the full look.
+>
+> - With card-mod: graphite gradient on cards and silver hover effect.
+> - Without card-mod: the theme still works (dark colors, borders, shadows, readable inputs), but cards are a flat `#17181b` and there is no gradient or hover effect.
 
 ## Installation
 
