@@ -1,23 +1,21 @@
 # Dark Moon Theme
 
-A minimal dark theme for Home Assistant with: graphite cards, cool silver accents and a soft silver glow on hover.
+A minimal dark theme for Home Assistant: graphite cards, cool silver accents and a soft silver glow on hover.
+
+> **For the full look, install [card-mod](https://github.com/thomasloven/lovelace-card-mod).**
+> Without it the theme still works (dark colors, borders, shadows, readable inputs), but cards are flat and there is no gradient or hover glow.
 
 ![Dark Moon](images/preview.png)
 
 ## Features
 
-- Near-black background with graphite cards and a subtle top-to-bottom gradient
+- Near-black background with graphite cards
+- Subtle top-to-bottom gradient on cards *(card-mod)*
+- Silver border and glow on hover, mouse only, never stuck on touch screens *(card-mod)*
 - Thin neutral borders and a tight shadow that never spills onto neighbouring cards
-- Silver border and glow on hover (mouse only, never stuck on touch screens)
 - Readable text fields, dropdowns, dialogs, switches and sliders
 - Works great with [Mushroom](https://github.com/piitaya/lovelace-mushroom) cards
 - Does not change font sizes, icon sizes, spacing or your cards' icon colors
-
-## Requirements
-
-- [card-mod](https://github.com/thomasloven/lovelace-card-mod) is **recommended**, not required.
-  - With card-mod: graphite gradient on cards and silver hover effect.
-  - Without card-mod: everything else works; cards are a flat `#17181b` and there is no hover effect.
 
 ## Installation
 
@@ -48,21 +46,6 @@ frontend:
 3. Set the mode to **Dark**.
 
 Dark Moon only has a dark variant. If the mode is set to Auto and your device is in light mode, Home Assistant mixes in its own light colors and some text becomes hard to read.
-
-## Customization
-
-Edit `themes/dark_moon.yaml` (colors, border radius, hover glow); every value is commented.
-
-To use your own color on a single card (requires card-mod):
-
-```yaml
-card_mod:
-  style: |
-    ha-card {
-      --dark-moon-card-gradient: none;
-      --ha-card-background: #2b1d0e;
-    }
-```
 
 ## License
 
