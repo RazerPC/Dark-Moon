@@ -4,7 +4,7 @@
 
 [![Open your Home Assistant instance and open a repository inside HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=RazerPC&repository=Dark-Moon&category=theme)
 
-1. Open HACS and search for **Dark Moon**, or click the button above.
+1. Open HACS and search for **Dark Moon Theme**, or click the button above.
 2. Download it.
 3. Use **Quick reload** (Settings → System → Restart Home Assistant) to load the theme.
 
