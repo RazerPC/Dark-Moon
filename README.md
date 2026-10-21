@@ -1,4 +1,4 @@
-# Dark Moon
+# Dark Moon Theme
 
 A minimal dark theme for Home Assistant: graphite cards, cool silver accents and a soft silver glow on hover.
 
