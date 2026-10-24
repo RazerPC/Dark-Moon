@@ -15,7 +15,7 @@ A minimal dark theme for Home Assistant with: graphite cards, cool silver accent
 
 ## Requirements
 
-> [!WARNING]
+> [!NOTE]
 > [card-mod](https://github.com/thomasloven/lovelace-card-mod) is **strongly recommended** for the full look.
 >
 > - With card-mod: graphite gradient on cards and silver hover effect.
